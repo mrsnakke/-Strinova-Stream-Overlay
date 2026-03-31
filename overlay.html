@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rank Overlay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="overlay-container">
+        <div class="rank-card theme-substance" id="rank-card">
+
+            <!-- Icono arriba -->
+            <div class="rank-icon-section">
+                <div class="icon-glow"></div>
+                <img id="rank-image" src="asset/Substance III-I.png" alt="Rank Icon">
+            </div>
+
+            <!-- Info central -->
+            <div class="rank-info-section">
+                <div class="rank-header">
+                    <span id="rank-name">SUBSTANCE</span>
+                    <span id="rank-tier">III</span>
+                </div>
+                
+                <div class="score-display">
+                    <span id="current-score">1250</span>
+                    <span class="score-label">SR</span>
+                </div>
+
+                <div class="progress-top-stats">
+                    <div class="stat win">
+                        <span class="val" id="wins-count">0</span>
+                        <span class="lab">W</span>
+                    </div>
+                    <div class="stat loss">
+                        <span class="val" id="losses-count">0</span>
+                        <span class="lab">L</span>
+                    </div>
+                </div>
+
+                <!-- Barra de progreso segmentada -->
+                <div id="progress-container" class="progress-container">
+                    <div class="progress-bar">
+                        <div class="segment">
+                            <div class="fill" id="fill-1"></div>
+                        </div>
+                        <div class="segment">
+                            <div class="fill" id="fill-2"></div>
+                        </div>
+                        <div class="segment">
+                            <div class="fill" id="fill-3"></div>
+                        </div>
+                        <div class="segment">
+                            <div class="fill" id="fill-4"></div>
+                        </div>
+                        <div class="segment">
+                            <div class="fill" id="fill-5"></div>
+                        </div>
+                    </div>
+                    <div class="progress-text">
+                        <span id="points-label">Strinovium Points</span>
+                        <span id="points-val">10/100</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-footer-bar"></div>
+        </div>
+    </div>
+    <script src="overlay.js"></script>
+</body>
+</html>

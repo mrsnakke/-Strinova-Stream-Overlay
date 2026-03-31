@@ -1,0 +1,289 @@
+:root {
+    --bg-card: rgba(10, 12, 18, 0.95);
+    --bg-inner: rgba(15, 18, 26, 0.85);
+    --text-main: #ffffff;
+    --text-dim: rgb(255, 255, 255);
+    
+    /* Rank Theme Colors */
+    --theme-substance: #8a8a8a;
+    --theme-molecule: #cd7f32;
+    --theme-atom: #00e5ff;
+    --theme-proton: #ffcc00;
+    --theme-neutron: #00ffa2;
+    --theme-electron: #2e7bff;
+    --theme-quark: #be4dff;
+    --theme-superstring: #ff2d55;
+    --theme-singularity: #ffffff;
+    
+    --accent: var(--theme-substance);
+}
+
+/* Theme Classes */
+.theme-substance { --accent: #8a8a8a; }
+.theme-molecule { --accent: #cd7f32; }
+.theme-atom { --accent: #00e5ff; }
+.theme-proton { --accent: #ffcc00; }
+.theme-neutron { --accent: #00ffa2; }
+.theme-electron { --accent: #2e7bff; }
+.theme-quark { --accent: #be4dff; }
+.theme-superstring { --accent: #ff2d55; }
+.theme-singularity { --accent: #ffffff; }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    overflow: visible;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    color: var(--text-main);
+    display: flex;
+    justify-content: center;
+}
+
+#overlay-container {
+    perspective: 1000px;
+    overflow: visible;
+    margin: 80px 0;
+}
+
+.rank-card {
+    position: relative;
+    width: 320px; /* Ancho más compacto y centrado */
+    background: transparent;
+    border-radius: 16px;
+    padding: 24px;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: none;
+    border: none;
+    outline: opx solid rgba(255, 255, 255, 0);
+    transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.75);
+}
+
+.card-glow {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, var(--accent) 0%, transparent 60%);
+    opacity: 0.1;
+    filter: blur(50px);
+    pointer-events: none;
+}
+
+/* Rank Icon (Top) */
+.rank-icon-section {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    overflow: visible;
+    z-index: 2;
+}
+
+.icon-glow {
+    position: absolute;
+    width: 140%;
+    height: 140%;
+    top: -20%;
+    left: -20%;
+    background: var(--accent);
+    filter: blur(35px);
+    opacity: 0.3;
+    border-radius: 50%;
+    transition: background 0.8s ease;
+}
+
+#rank-image {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 0 20px rgba(0,0,0,0.6));
+    animation: floating 4s ease-in-out infinite;
+}
+
+/* Info Section (Center) */
+.rank-info-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.rank-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 4px;
+}
+
+#rank-name {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px var(--accent);
+}
+
+#rank-tier {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--accent);
+    opacity: 0.9;
+}
+
+.score-display {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+#current-score {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.score-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--accent);
+    opacity: 0.7;
+}
+
+/* Progress Bar (Segmented) */
+.progress-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    display: flex;
+    gap: 4px;
+    height: 6px;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.segment {
+    flex: 1;
+    background: rgb(14 2 2 / 62%);
+    height: 100%;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+}
+
+.segment .fill {
+    width: 0%;
+    height: 100%;
+    background: var(--accent);
+    box-shadow: 0 0 10px var(--accent);
+    transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.progress-text {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+#points-label {
+    color: var(--text-dim);
+}
+
+#points-val {
+    color: var(--accent);
+}
+
+/* Progress stats above the bar */
+.progress-top-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.progress-top-stats .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 72px;
+    padding: 10px 12px;
+    background: transparent;
+    border-radius: 0;
+    border: none;
+}
+
+.progress-top-stats .stat.loss {
+    align-items: flex-end;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat .val {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.stat .lab {
+    font-size: 10px;
+    font-weight: 700;
+    opacity: 0.5;
+}
+
+.stat.win .val { color: #00ff88; text-shadow: 0 0 10px rgba(0, 255, 136, 0.3); }
+.stat.loss .val { color: #ff3e3e; text-shadow: 0 0 10px rgba(255, 62, 62, 0.3); }
+
+/* Hide progress for special ranks */
+.no-progress .progress-container {
+    display: none;
+}
+
+/* Footer Decor */
+.card-footer-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    box-shadow: 0 0 15px var(--accent);
+}
+
+/* Animations */
+@keyframes floating {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-8px) scale(1.02); }
+}
+
+.updated {
+    animation: flashUpdate 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes flashUpdate {
+    0% { filter: brightness(1); transform: scale(1); }
+    50% { filter: brightness(1.4) translateY(-2px); transform: scale(1.01); }
+    100% { filter: brightness(1); transform: scale(1); }
+}

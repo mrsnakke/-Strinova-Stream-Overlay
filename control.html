@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream Control Panel</title>
+    <link rel="stylesheet" href="panel-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #111114;">
+    <div class="main-wrapper">
+        <div class="panel-container">
+            <h1>Strinova Overlay</h1>
+            
+            <div class="section">
+                <label>Select Rank</label>
+                <div id="rank-grid" class="rank-grid">
+                    <!-- Rank thumbnails will be injected here -->
+                </div>
+            </div>
+
+            <div class="section">
+                <label>Tier Level</label>
+                <select id="tier-select"></select>
+            </div>
+
+            <div class="section grid">
+                <div class="input-group">
+                    <label>Score (PTS)</label>
+                    <input type="number" id="score-input" value="1000">
+                </div>
+            </div>
+
+            <div class="section grid">
+                <div class="input-group">
+                    <label>Wins (W)</label>
+                    <div class="counter">
+                        <button onclick="changeVal('wins', -1)">-</button>
+                        <input type="number" id="wins-input" value="0">
+                        <button onclick="changeVal('wins', 1)">+</button>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>Losses (L)</label>
+                    <div class="counter">
+                        <button onclick="changeVal('losses', -1)">-</button>
+                        <input type="number" id="losses-input" value="0">
+                        <button onclick="changeVal('losses', 1)">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <button id="reset-btn" class="danger">Reset Statistics</button>
+        </div>
+    </div>
+    <script src="panel.js"></script>
+</body>
+</html>
