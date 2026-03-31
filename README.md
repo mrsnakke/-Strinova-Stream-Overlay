@@ -71,7 +71,17 @@ Now let's put the graphic on your screen for the viewers.
 **Fix:** For security reasons, OBS sometimes blocks communication between local files (`file:///`). 
 1. Double-click your `Strinova Rank` source in OBS to open its properties.
 2. Scroll to the very bottom and click the **"Refresh cache of current page"** button.
-3. *Pro-Tip:* To avoid having to do this manually, host the files on a free web server (like GitHub Pages) and use `https://...` links instead of local files.
+
+---
+
+## Social Media
+
+[![Twitch](https://img.shields.io/badge/Twitch-9146FF?style=for-the-badge&logo=twitch&logoColor=white)](https://www.twitch.tv/mrsnakevt)
+[![Kick](https://img.shields.io/badge/Kick-50FF78?style=for-the-badge&logo=kick&logoColor=white)](https://kick.com/mrsnakevt)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@MrSnake_VT)
+[![X (Twitter)](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/MrSnakeVT)
+
+---
 
 <br><br><br>
 
@@ -150,4 +160,15 @@ Ahora pondremos el gráfico en tu pantalla.
 **Solución:** Por medidas de seguridad, OBS a veces bloquea la comunicación entre archivos locales (`file:///`). 
 1. Haz doble clic en tu fuente `Rango Strinova` en la lista de fuentes de OBS.
 2. Baja hasta el fondo de la ventana y haz clic en el botón **"Actualizar la caché de la página actual"** (Refresh cache of current page).
-3. *Tip definitivo:* Para evitar tener que hacer esto a mano, aloja los archivos en un servidor web gratuito (como GitHub Pages) y usa enlaces `https://...` en lugar de archivos locales.
+
+---
+
+## Social Media
+
+[![Twitch](https://img.shields.io/badge/Twitch-9146FF?style=for-the-badge&logo=twitch&logoColor=white)](https://www.twitch.tv/mrsnakevt)
+[![Kick](https://img.shields.io/badge/Kick-50FF78?style=for-the-badge&logo=kick&logoColor=white)](https://kick.com/mrsnakevt)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@MrSnake_VT)
+[![X (Twitter)](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/MrSnakeVT)
+
+---
+
