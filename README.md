@@ -4,6 +4,7 @@
 # 🌟 Strinova Rank Overlay for OBS
 
 Widget for **Strinova** streamers. Display your current rank, tier, skill rating (SR), win/loss counter, and progress bar, all updatable in real-time without ever leaving OBS Studio.
+<img width="1680" height="853" alt="image" src="https://github.com/user-attachments/assets/968af10c-1ccc-4aaf-8c79-e14e9bf1e478" />
 
 ## ✨ Features
 - **Dynamic Themes:** Automatically changes colors and styles based on your selected rank (Substance, Molecule, Atom, etc.).
@@ -15,6 +16,7 @@ Widget for **Strinova** streamers. Display your current rank, tier, skill rating
 ---
 
 ## 🚀 How to Install and Configure in OBS
+<img width="2558" height="1402" alt="image" src="https://github.com/user-attachments/assets/e576ebdc-7d2e-46a6-ae9f-43d3faedbe45" />
 
 This project consists of two parts:
 1. The **Control Panel** (`control.html`): Where you change the data.
@@ -69,7 +71,17 @@ Now let's put the graphic on your screen for the viewers.
 **Fix:** For security reasons, OBS sometimes blocks communication between local files (`file:///`). 
 1. Double-click your `Strinova Rank` source in OBS to open its properties.
 2. Scroll to the very bottom and click the **"Refresh cache of current page"** button.
-3. *Pro-Tip:* To avoid having to do this manually, host the files on a free web server (like GitHub Pages) and use `https://...` links instead of local files.
+
+---
+
+## Social Media
+
+[![Twitch](https://img.shields.io/badge/Twitch-9146FF?style=for-the-badge&logo=twitch&logoColor=white)](https://www.twitch.tv/mrsnakevt)
+[![Kick](https://img.shields.io/badge/Kick-50FF78?style=for-the-badge&logo=kick&logoColor=white)](https://kick.com/mrsnakevt)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@MrSnake_VT)
+[![X (Twitter)](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/MrSnakeVT)
+
+---
 
 <br><br><br>
 
@@ -81,6 +93,7 @@ Now let's put the graphic on your screen for the viewers.
 # 🇪🇸 Versión en Español
 
 Un widget visual, elegante y animado para streamers de **Strinova**. Muestra tu rango actual, nivel, puntos de clasificación (SR), contador de victorias/derrotas y tu barra de progreso, todo actualizable en tiempo real sin tener que salir de OBS.
+<img width="1680" height="853" alt="image" src="https://github.com/user-attachments/assets/d30cfb90-1b2c-4426-9ec8-7816db869086" />
 
 ## ✨ Características
 - **Diseño Dinámico:** Cambia de color y estilo automáticamente según el rango seleccionado (Substance, Molecule, Atom, etc.).
@@ -98,6 +111,7 @@ Este proyecto consta de dos partes:
 2. El **Overlay** (`overlay.html`): Lo que ven tus espectadores en el stream.
 
 A continuación, te explicamos cómo añadir ambas partes a tu OBS Studio.
+<img width="2558" height="1402" alt="image" src="https://github.com/user-attachments/assets/b38d5e3d-005d-48a5-b38d-a80bb5759cd3" />
 
 ### PASO 1: Añadir el Panel de Control a tu OBS
 
@@ -146,4 +160,15 @@ Ahora pondremos el gráfico en tu pantalla.
 **Solución:** Por medidas de seguridad, OBS a veces bloquea la comunicación entre archivos locales (`file:///`). 
 1. Haz doble clic en tu fuente `Rango Strinova` en la lista de fuentes de OBS.
 2. Baja hasta el fondo de la ventana y haz clic en el botón **"Actualizar la caché de la página actual"** (Refresh cache of current page).
-3. *Tip definitivo:* Para evitar tener que hacer esto a mano, aloja los archivos en un servidor web gratuito (como GitHub Pages) y usa enlaces `https://...` en lugar de archivos locales.
+
+---
+
+## Social Media
+
+[![Twitch](https://img.shields.io/badge/Twitch-9146FF?style=for-the-badge&logo=twitch&logoColor=white)](https://www.twitch.tv/mrsnakevt)
+[![Kick](https://img.shields.io/badge/Kick-50FF78?style=for-the-badge&logo=kick&logoColor=white)](https://kick.com/mrsnakevt)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@MrSnake_VT)
+[![X (Twitter)](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/MrSnakeVT)
+
+---
+
